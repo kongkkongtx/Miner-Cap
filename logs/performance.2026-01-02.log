@@ -1,0 +1,17 @@
+2026-01-02 18:24:11.140 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.performance - [性能] [USER_LOGIN] 耗时:826ms 登录成功
+2026-01-02 18:28:13.207 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.performance - [性能] [USER_LOGIN] 耗时:826ms 登录成功
+2026-01-02 18:28:13.314 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_USER_INFO] 耗时:8ms 获取用户信息成功
+2026-01-02 18:28:13.378 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_USER_INFO] 耗时:7ms 获取用户信息成功
+2026-01-02 18:28:14.272 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_CONVERSATIONS] 耗时:33ms 获取对话历史成功（空结果）
+2026-01-02 18:30:03.342 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_USER_INFO] 耗时:7ms 获取用户信息成功
+2026-01-02 18:30:03.959 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.performance - [性能] [ADMIN_GET_ALL_CONVERSATIONS] 耗时:49ms 管理员查询对话历史成功
+2026-01-02 18:30:06.431 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_USER_INFO] 耗时:8ms 获取用户信息成功
+2026-01-02 18:30:06.726 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_CONVERSATIONS] 耗时:11ms 获取对话历史成功（空结果）
+2026-01-02 18:33:12.283 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_USER_INFO] 耗时:7ms 获取用户信息成功
+2026-01-02 18:33:16.765 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_USER_INFO] 耗时:10ms 获取用户信息成功
+2026-01-02 18:33:16.834 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_USER_INFO] 耗时:9ms 获取用户信息成功
+2026-01-02 18:33:17.136 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_CONVERSATIONS] 耗时:16ms 获取对话历史成功（空结果）
+2026-01-02 18:42:19.300 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_USER_INFO] 耗时:5ms 获取用户信息成功
+2026-01-02 18:42:19.784 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.performance - [性能] [ADMIN_GET_ALL_CONVERSATIONS] 耗时:15ms 管理员查询对话历史成功
+2026-01-02 18:43:04.232 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_USER_INFO] 耗时:8ms 获取用户信息成功
+2026-01-02 18:43:04.547 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_CONVERSATIONS] 耗时:13ms 获取对话历史成功（空结果）
