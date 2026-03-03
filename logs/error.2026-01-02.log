@@ -1,4 +1,4 @@
-2026-01-02 18:24:11.113 [http-nio-8081-exec-5] ERROR com.yizhaoqi.smartpai.service.TokenCacheService - Failed to cache token: 171e538ce09c49b88ee674619108d629
+2026-01-02 18:24:11.113 [http-nio-8081-exec-5] ERROR com.yizhaoqi.minercap.service.TokenCacheService - Failed to cache token: 171e538ce09c49b88ee674619108d629
 org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis
 	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1858)
 	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1789)
@@ -15,9 +15,9 @@ org.springframework.data.redis.RedisConnectionFailureException: Unable to connec
 	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:378)
 	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:117)
 	at org.springframework.data.redis.core.DefaultValueOperations.set(DefaultValueOperations.java:208)
-	at com.yizhaoqi.smartpai.service.TokenCacheService.cacheToken(TokenCacheService.java:47)
-	at com.yizhaoqi.smartpai.utils.JwtUtils.generateToken(JwtUtils.java:86)
-	at com.yizhaoqi.smartpai.controller.UserController.login(UserController.java:80)
+	at com.yizhaoqi.minercap.service.TokenCacheService.cacheToken(TokenCacheService.java:47)
+	at com.yizhaoqi.minercap.utils.JwtUtils.generateToken(JwtUtils.java:86)
+	at com.yizhaoqi.minercap.controller.UserController.login(UserController.java:80)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -63,10 +63,10 @@ org.springframework.data.redis.RedisConnectionFailureException: Unable to connec
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
 	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
-	at com.yizhaoqi.smartpai.config.OrgTagAuthorizationFilter.doFilterInternal(OrgTagAuthorizationFilter.java:110)
+	at com.yizhaoqi.minercap.config.OrgTagAuthorizationFilter.doFilterInternal(OrgTagAuthorizationFilter.java:110)
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
-	at com.yizhaoqi.smartpai.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:81)
+	at com.yizhaoqi.minercap.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:81)
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
 	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
@@ -158,7 +158,7 @@ Caused by: io.lettuce.core.RedisCommandExecutionException: NOAUTH Authentication
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	... 1 common frames omitted
-2026-01-02 18:24:11.139 [http-nio-8081-exec-5] ERROR com.yizhaoqi.smartpai.service.TokenCacheService - Failed to cache refresh token: 7430916427524003bbc599b0d09463df
+2026-01-02 18:24:11.139 [http-nio-8081-exec-5] ERROR com.yizhaoqi.minercap.service.TokenCacheService - Failed to cache refresh token: 7430916427524003bbc599b0d09463df
 org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis
 	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1858)
 	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1789)
@@ -175,9 +175,9 @@ org.springframework.data.redis.RedisConnectionFailureException: Unable to connec
 	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:378)
 	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:117)
 	at org.springframework.data.redis.core.DefaultValueOperations.set(DefaultValueOperations.java:208)
-	at com.yizhaoqi.smartpai.service.TokenCacheService.cacheRefreshToken(TokenCacheService.java:70)
-	at com.yizhaoqi.smartpai.utils.JwtUtils.generateRefreshToken(JwtUtils.java:314)
-	at com.yizhaoqi.smartpai.controller.UserController.login(UserController.java:81)
+	at com.yizhaoqi.minercap.service.TokenCacheService.cacheRefreshToken(TokenCacheService.java:70)
+	at com.yizhaoqi.minercap.utils.JwtUtils.generateRefreshToken(JwtUtils.java:314)
+	at com.yizhaoqi.minercap.controller.UserController.login(UserController.java:81)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -223,10 +223,10 @@ org.springframework.data.redis.RedisConnectionFailureException: Unable to connec
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
 	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
-	at com.yizhaoqi.smartpai.config.OrgTagAuthorizationFilter.doFilterInternal(OrgTagAuthorizationFilter.java:110)
+	at com.yizhaoqi.minercap.config.OrgTagAuthorizationFilter.doFilterInternal(OrgTagAuthorizationFilter.java:110)
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
-	at com.yizhaoqi.smartpai.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:81)
+	at com.yizhaoqi.minercap.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:81)
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
 	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
@@ -318,7 +318,7 @@ Caused by: io.lettuce.core.RedisCommandExecutionException: NOAUTH Authentication
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	... 1 common frames omitted
-2026-01-02 18:24:11.221 [http-nio-8081-exec-6] ERROR com.yizhaoqi.smartpai.service.TokenCacheService - Failed to check token blacklist: 171e538ce09c49b88ee674619108d629
+2026-01-02 18:24:11.221 [http-nio-8081-exec-6] ERROR com.yizhaoqi.minercap.service.TokenCacheService - Failed to check token blacklist: 171e538ce09c49b88ee674619108d629
 org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis
 	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1858)
 	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1789)
@@ -335,10 +335,10 @@ org.springframework.data.redis.RedisConnectionFailureException: Unable to connec
 	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:378)
 	at org.springframework.data.redis.core.RedisTemplate.doWithKeys(RedisTemplate.java:790)
 	at org.springframework.data.redis.core.RedisTemplate.hasKey(RedisTemplate.java:576)
-	at com.yizhaoqi.smartpai.service.TokenCacheService.isTokenBlacklisted(TokenCacheService.java:163)
-	at com.yizhaoqi.smartpai.service.TokenCacheService.isTokenValid(TokenCacheService.java:84)
-	at com.yizhaoqi.smartpai.utils.JwtUtils.validateToken(JwtUtils.java:105)
-	at com.yizhaoqi.smartpai.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:47)
+	at com.yizhaoqi.minercap.service.TokenCacheService.isTokenBlacklisted(TokenCacheService.java:163)
+	at com.yizhaoqi.minercap.service.TokenCacheService.isTokenValid(TokenCacheService.java:84)
+	at com.yizhaoqi.minercap.utils.JwtUtils.validateToken(JwtUtils.java:105)
+	at com.yizhaoqi.minercap.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:47)
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
 	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
@@ -430,7 +430,7 @@ Caused by: io.lettuce.core.RedisCommandExecutionException: NOAUTH Authentication
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	... 1 common frames omitted
-2026-01-02 18:24:11.230 [http-nio-8081-exec-6] ERROR com.yizhaoqi.smartpai.service.TokenCacheService - Failed to check token validity: 171e538ce09c49b88ee674619108d629
+2026-01-02 18:24:11.230 [http-nio-8081-exec-6] ERROR com.yizhaoqi.minercap.service.TokenCacheService - Failed to check token validity: 171e538ce09c49b88ee674619108d629
 org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis
 	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1858)
 	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1789)
@@ -447,9 +447,9 @@ org.springframework.data.redis.RedisConnectionFailureException: Unable to connec
 	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:378)
 	at org.springframework.data.redis.core.RedisTemplate.doWithKeys(RedisTemplate.java:790)
 	at org.springframework.data.redis.core.RedisTemplate.hasKey(RedisTemplate.java:576)
-	at com.yizhaoqi.smartpai.service.TokenCacheService.isTokenValid(TokenCacheService.java:90)
-	at com.yizhaoqi.smartpai.utils.JwtUtils.validateToken(JwtUtils.java:105)
-	at com.yizhaoqi.smartpai.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:47)
+	at com.yizhaoqi.minercap.service.TokenCacheService.isTokenValid(TokenCacheService.java:90)
+	at com.yizhaoqi.minercap.utils.JwtUtils.validateToken(JwtUtils.java:105)
+	at com.yizhaoqi.minercap.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:47)
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
 	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
 	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
@@ -541,7 +541,7 @@ Caused by: io.lettuce.core.RedisCommandExecutionException: NOAUTH Authentication
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	... 1 common frames omitted
-2026-01-02 18:32:57.191 [reactor-http-nio-3] ERROR com.yizhaoqi.smartpai.service.ChatHandler - AI服务错误: 402 Payment Required from POST https://api.deepseek.com/v1/chat/completions
+2026-01-02 18:32:57.191 [reactor-http-nio-3] ERROR com.yizhaoqi.minercap.service.ChatHandler - AI服务错误: 402 Payment Required from POST https://api.deepseek.com/v1/chat/completions
 org.springframework.web.reactive.function.client.WebClientResponseException: 402 Payment Required from POST https://api.deepseek.com/v1/chat/completions
 	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:337)
 	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
@@ -603,15 +603,15 @@ Original Stack Trace:
 		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 		at java.base/java.lang.Thread.run(Thread.java:842)
-2026-01-02 18:32:57.198 [reactor-http-nio-3] ERROR com.yizhaoqi.smartpai.service.ChatHandler - 发送错误消息到会话 560fd83a-7535-0657-87af-dc17639aee25: {"error":"AI服务暂时不可用，请稍后重试"}
-2026-01-02 18:32:57.203 [reactor-http-nio-3] ERROR com.yizhaoqi.smartpai.service.ChatHandler - 已发送错误消息到会话: 560fd83a-7535-0657-87af-dc17639aee25
-2026-01-02 18:32:57.906 [Thread-21] ERROR com.yizhaoqi.smartpai.service.ChatHandler - AI服务错误: 响应构建器为空
+2026-01-02 18:32:57.198 [reactor-http-nio-3] ERROR com.yizhaoqi.minercap.service.ChatHandler - 发送错误消息到会话 560fd83a-7535-0657-87af-dc17639aee25: {"error":"AI服务暂时不可用，请稍后重试"}
+2026-01-02 18:32:57.203 [reactor-http-nio-3] ERROR com.yizhaoqi.minercap.service.ChatHandler - 已发送错误消息到会话: 560fd83a-7535-0657-87af-dc17639aee25
+2026-01-02 18:32:57.906 [Thread-21] ERROR com.yizhaoqi.minercap.service.ChatHandler - AI服务错误: 响应构建器为空
 java.lang.RuntimeException: 响应构建器为空
-	at com.yizhaoqi.smartpai.service.ChatHandler.lambda$processMessage$2(ChatHandler.java:196)
+	at com.yizhaoqi.minercap.service.ChatHandler.lambda$processMessage$2(ChatHandler.java:196)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2026-01-02 18:32:57.909 [Thread-21] ERROR com.yizhaoqi.smartpai.service.ChatHandler - 发送错误消息到会话 560fd83a-7535-0657-87af-dc17639aee25: {"error":"AI服务暂时不可用，请稍后重试"}
-2026-01-02 18:32:57.910 [Thread-21] ERROR com.yizhaoqi.smartpai.service.ChatHandler - 已发送错误消息到会话: 560fd83a-7535-0657-87af-dc17639aee25
-2026-01-02 18:55:58.766 [http-nio-8081-exec-2] ERROR com.yizhaoqi.smartpai.client.EmbeddingClient - 调用向量化 API 失败: Connection reset
+2026-01-02 18:32:57.909 [Thread-21] ERROR com.yizhaoqi.minercap.service.ChatHandler - 发送错误消息到会话 560fd83a-7535-0657-87af-dc17639aee25: {"error":"AI服务暂时不可用，请稍后重试"}
+2026-01-02 18:32:57.910 [Thread-21] ERROR com.yizhaoqi.minercap.service.ChatHandler - 已发送错误消息到会话: 560fd83a-7535-0657-87af-dc17639aee25
+2026-01-02 18:55:58.766 [http-nio-8081-exec-2] ERROR com.yizhaoqi.minercap.client.EmbeddingClient - 调用向量化 API 失败: Connection reset
 org.springframework.web.reactive.function.client.WebClientRequestException: Connection reset
 	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137)
 	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
@@ -683,12 +683,12 @@ Original Stack Trace:
 	Suppressed: java.lang.Exception: #block terminated with an error
 		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:146)
 		at reactor.core.publisher.Mono.block(Mono.java:1807)
-		at com.yizhaoqi.smartpai.client.EmbeddingClient.callApiOnce(EmbeddingClient.java:80)
-		at com.yizhaoqi.smartpai.client.EmbeddingClient.embed(EmbeddingClient.java:55)
-		at com.yizhaoqi.smartpai.service.HybridSearchService.embedToVectorList(HybridSearchService.java:376)
-		at com.yizhaoqi.smartpai.service.HybridSearchService.searchWithPermission(HybridSearchService.java:76)
-		at com.yizhaoqi.smartpai.service.ChatHandler.processMessage(ChatHandler.java:73)
-		at com.yizhaoqi.smartpai.handler.ChatWebSocketHandler.handleTextMessage(ChatWebSocketHandler.java:73)
+		at com.yizhaoqi.minercap.client.EmbeddingClient.callApiOnce(EmbeddingClient.java:80)
+		at com.yizhaoqi.minercap.client.EmbeddingClient.embed(EmbeddingClient.java:55)
+		at com.yizhaoqi.minercap.service.HybridSearchService.embedToVectorList(HybridSearchService.java:376)
+		at com.yizhaoqi.minercap.service.HybridSearchService.searchWithPermission(HybridSearchService.java:76)
+		at com.yizhaoqi.minercap.service.ChatHandler.processMessage(ChatHandler.java:73)
+		at com.yizhaoqi.minercap.handler.ChatWebSocketHandler.handleTextMessage(ChatWebSocketHandler.java:73)
 		at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
 		at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75)
 		at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56)
@@ -729,13 +729,13 @@ Caused by: java.net.SocketException: Connection reset
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2026-01-02 18:55:58.766 [http-nio-8081-exec-2] ERROR com.yizhaoqi.smartpai.service.HybridSearchService - 生成向量失败
+2026-01-02 18:55:58.766 [http-nio-8081-exec-2] ERROR com.yizhaoqi.minercap.service.HybridSearchService - 生成向量失败
 java.lang.RuntimeException: 向量生成失败
-	at com.yizhaoqi.smartpai.client.EmbeddingClient.embed(EmbeddingClient.java:62)
-	at com.yizhaoqi.smartpai.service.HybridSearchService.embedToVectorList(HybridSearchService.java:376)
-	at com.yizhaoqi.smartpai.service.HybridSearchService.searchWithPermission(HybridSearchService.java:76)
-	at com.yizhaoqi.smartpai.service.ChatHandler.processMessage(ChatHandler.java:73)
-	at com.yizhaoqi.smartpai.handler.ChatWebSocketHandler.handleTextMessage(ChatWebSocketHandler.java:73)
+	at com.yizhaoqi.minercap.client.EmbeddingClient.embed(EmbeddingClient.java:62)
+	at com.yizhaoqi.minercap.service.HybridSearchService.embedToVectorList(HybridSearchService.java:376)
+	at com.yizhaoqi.minercap.service.HybridSearchService.searchWithPermission(HybridSearchService.java:76)
+	at com.yizhaoqi.minercap.service.ChatHandler.processMessage(ChatHandler.java:73)
+	at com.yizhaoqi.minercap.handler.ChatWebSocketHandler.handleTextMessage(ChatWebSocketHandler.java:73)
 	at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
 	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75)
 	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56)
@@ -832,12 +832,12 @@ Original Stack Trace:
 	Suppressed: java.lang.Exception: #block terminated with an error
 		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:146)
 		at reactor.core.publisher.Mono.block(Mono.java:1807)
-		at com.yizhaoqi.smartpai.client.EmbeddingClient.callApiOnce(EmbeddingClient.java:80)
-		at com.yizhaoqi.smartpai.client.EmbeddingClient.embed(EmbeddingClient.java:55)
-		at com.yizhaoqi.smartpai.service.HybridSearchService.embedToVectorList(HybridSearchService.java:376)
-		at com.yizhaoqi.smartpai.service.HybridSearchService.searchWithPermission(HybridSearchService.java:76)
-		at com.yizhaoqi.smartpai.service.ChatHandler.processMessage(ChatHandler.java:73)
-		at com.yizhaoqi.smartpai.handler.ChatWebSocketHandler.handleTextMessage(ChatWebSocketHandler.java:73)
+		at com.yizhaoqi.minercap.client.EmbeddingClient.callApiOnce(EmbeddingClient.java:80)
+		at com.yizhaoqi.minercap.client.EmbeddingClient.embed(EmbeddingClient.java:55)
+		at com.yizhaoqi.minercap.service.HybridSearchService.embedToVectorList(HybridSearchService.java:376)
+		at com.yizhaoqi.minercap.service.HybridSearchService.searchWithPermission(HybridSearchService.java:76)
+		at com.yizhaoqi.minercap.service.ChatHandler.processMessage(ChatHandler.java:73)
+		at com.yizhaoqi.minercap.handler.ChatWebSocketHandler.handleTextMessage(ChatWebSocketHandler.java:73)
 		at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
 		at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75)
 		at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56)
@@ -878,7 +878,7 @@ Caused by: java.net.SocketException: Connection reset
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2026-01-02 19:09:18.639 [http-nio-8081-exec-5] ERROR com.yizhaoqi.smartpai.client.EmbeddingClient - 调用向量化 API 失败: Connection reset
+2026-01-02 19:09:18.639 [http-nio-8081-exec-5] ERROR com.yizhaoqi.minercap.client.EmbeddingClient - 调用向量化 API 失败: Connection reset
 org.springframework.web.reactive.function.client.WebClientRequestException: Connection reset
 	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137)
 	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
@@ -950,12 +950,12 @@ Original Stack Trace:
 	Suppressed: java.lang.Exception: #block terminated with an error
 		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:146)
 		at reactor.core.publisher.Mono.block(Mono.java:1807)
-		at com.yizhaoqi.smartpai.client.EmbeddingClient.callApiOnce(EmbeddingClient.java:80)
-		at com.yizhaoqi.smartpai.client.EmbeddingClient.embed(EmbeddingClient.java:55)
-		at com.yizhaoqi.smartpai.service.HybridSearchService.embedToVectorList(HybridSearchService.java:376)
-		at com.yizhaoqi.smartpai.service.HybridSearchService.searchWithPermission(HybridSearchService.java:76)
-		at com.yizhaoqi.smartpai.service.ChatHandler.processMessage(ChatHandler.java:73)
-		at com.yizhaoqi.smartpai.handler.ChatWebSocketHandler.handleTextMessage(ChatWebSocketHandler.java:73)
+		at com.yizhaoqi.minercap.client.EmbeddingClient.callApiOnce(EmbeddingClient.java:80)
+		at com.yizhaoqi.minercap.client.EmbeddingClient.embed(EmbeddingClient.java:55)
+		at com.yizhaoqi.minercap.service.HybridSearchService.embedToVectorList(HybridSearchService.java:376)
+		at com.yizhaoqi.minercap.service.HybridSearchService.searchWithPermission(HybridSearchService.java:76)
+		at com.yizhaoqi.minercap.service.ChatHandler.processMessage(ChatHandler.java:73)
+		at com.yizhaoqi.minercap.handler.ChatWebSocketHandler.handleTextMessage(ChatWebSocketHandler.java:73)
 		at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
 		at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75)
 		at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56)
@@ -996,13 +996,13 @@ Caused by: java.net.SocketException: Connection reset
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2026-01-02 19:09:18.640 [http-nio-8081-exec-5] ERROR com.yizhaoqi.smartpai.service.HybridSearchService - 生成向量失败
+2026-01-02 19:09:18.640 [http-nio-8081-exec-5] ERROR com.yizhaoqi.minercap.service.HybridSearchService - 生成向量失败
 java.lang.RuntimeException: 向量生成失败
-	at com.yizhaoqi.smartpai.client.EmbeddingClient.embed(EmbeddingClient.java:62)
-	at com.yizhaoqi.smartpai.service.HybridSearchService.embedToVectorList(HybridSearchService.java:376)
-	at com.yizhaoqi.smartpai.service.HybridSearchService.searchWithPermission(HybridSearchService.java:76)
-	at com.yizhaoqi.smartpai.service.ChatHandler.processMessage(ChatHandler.java:73)
-	at com.yizhaoqi.smartpai.handler.ChatWebSocketHandler.handleTextMessage(ChatWebSocketHandler.java:73)
+	at com.yizhaoqi.minercap.client.EmbeddingClient.embed(EmbeddingClient.java:62)
+	at com.yizhaoqi.minercap.service.HybridSearchService.embedToVectorList(HybridSearchService.java:376)
+	at com.yizhaoqi.minercap.service.HybridSearchService.searchWithPermission(HybridSearchService.java:76)
+	at com.yizhaoqi.minercap.service.ChatHandler.processMessage(ChatHandler.java:73)
+	at com.yizhaoqi.minercap.handler.ChatWebSocketHandler.handleTextMessage(ChatWebSocketHandler.java:73)
 	at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
 	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75)
 	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56)
@@ -1099,12 +1099,12 @@ Original Stack Trace:
 	Suppressed: java.lang.Exception: #block terminated with an error
 		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:146)
 		at reactor.core.publisher.Mono.block(Mono.java:1807)
-		at com.yizhaoqi.smartpai.client.EmbeddingClient.callApiOnce(EmbeddingClient.java:80)
-		at com.yizhaoqi.smartpai.client.EmbeddingClient.embed(EmbeddingClient.java:55)
-		at com.yizhaoqi.smartpai.service.HybridSearchService.embedToVectorList(HybridSearchService.java:376)
-		at com.yizhaoqi.smartpai.service.HybridSearchService.searchWithPermission(HybridSearchService.java:76)
-		at com.yizhaoqi.smartpai.service.ChatHandler.processMessage(ChatHandler.java:73)
-		at com.yizhaoqi.smartpai.handler.ChatWebSocketHandler.handleTextMessage(ChatWebSocketHandler.java:73)
+		at com.yizhaoqi.minercap.client.EmbeddingClient.callApiOnce(EmbeddingClient.java:80)
+		at com.yizhaoqi.minercap.client.EmbeddingClient.embed(EmbeddingClient.java:55)
+		at com.yizhaoqi.minercap.service.HybridSearchService.embedToVectorList(HybridSearchService.java:376)
+		at com.yizhaoqi.minercap.service.HybridSearchService.searchWithPermission(HybridSearchService.java:76)
+		at com.yizhaoqi.minercap.service.ChatHandler.processMessage(ChatHandler.java:73)
+		at com.yizhaoqi.minercap.handler.ChatWebSocketHandler.handleTextMessage(ChatWebSocketHandler.java:73)
 		at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
 		at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75)
 		at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56)

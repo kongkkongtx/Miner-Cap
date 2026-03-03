@@ -1,6 +1,6 @@
 2026-02-12 14:23:18.187 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
 java.lang.RuntimeException: 初始化索引失败
-	at com.yizhaoqi.smartpai.config.EsIndexInitializer.run(EsIndexInitializer.java:47)
+	at com.yizhaoqi.minercap.config.EsIndexInitializer.run(EsIndexInitializer.java:47)
 	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788)
 	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82)
 	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60)
@@ -20,19 +20,19 @@ java.lang.RuntimeException: 初始化索引失败
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at com.yizhaoqi.smartpai.SmartPaiApplication.main(SmartPaiApplication.java:10)
+	at com.yizhaoqi.minercap.MinerCapApplication.main(SmartPaiApplication.java:10)
 Caused by: co.elastic.clients.transport.TransportException: node: http://localhost:9200/, status: 404, [es/indices.create] Expecting JSON data but response content-type is: text/plain; charset=utf-8
 	at co.elastic.clients.transport.ElasticsearchTransportBase.checkJsonContentType(ElasticsearchTransportBase.java:464)
 	at co.elastic.clients.transport.ElasticsearchTransportBase.getApiResponse(ElasticsearchTransportBase.java:327)
 	at co.elastic.clients.transport.ElasticsearchTransportBase.performRequest(ElasticsearchTransportBase.java:140)
 	at co.elastic.clients.elasticsearch.indices.ElasticsearchIndicesClient.create(ElasticsearchIndicesClient.java:266)
-	at com.yizhaoqi.smartpai.config.EsIndexInitializer.createIndex(EsIndexInitializer.java:79)
-	at com.yizhaoqi.smartpai.config.EsIndexInitializer.initializeIndex(EsIndexInitializer.java:60)
-	at com.yizhaoqi.smartpai.config.EsIndexInitializer.run(EsIndexInitializer.java:33)
+	at com.yizhaoqi.minercap.config.EsIndexInitializer.createIndex(EsIndexInitializer.java:79)
+	at com.yizhaoqi.minercap.config.EsIndexInitializer.initializeIndex(EsIndexInitializer.java:60)
+	at com.yizhaoqi.minercap.config.EsIndexInitializer.run(EsIndexInitializer.java:33)
 	... 20 common frames omitted
 2026-02-12 14:52:49.738 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
 java.lang.RuntimeException: 初始化索引失败
-	at com.yizhaoqi.smartpai.config.EsIndexInitializer.run(EsIndexInitializer.java:47)
+	at com.yizhaoqi.minercap.config.EsIndexInitializer.run(EsIndexInitializer.java:47)
 	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788)
 	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82)
 	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60)
@@ -52,7 +52,7 @@ java.lang.RuntimeException: 初始化索引失败
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at com.yizhaoqi.smartpai.SmartPaiApplication.main(SmartPaiApplication.java:10)
+	at com.yizhaoqi.minercap.MinerCapApplication.main(SmartPaiApplication.java:10)
 Caused by: java.net.ConnectException: Connection refused: no further information
 	at org.elasticsearch.client.RestClient.extractAndWrapCause(RestClient.java:934)
 	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:304)
@@ -60,8 +60,8 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 	at co.elastic.clients.transport.rest_client.RestClientHttpClient.performRequest(RestClientHttpClient.java:91)
 	at co.elastic.clients.transport.ElasticsearchTransportBase.performRequest(ElasticsearchTransportBase.java:137)
 	at co.elastic.clients.elasticsearch.indices.ElasticsearchIndicesClient.exists(ElasticsearchIndicesClient.java:655)
-	at com.yizhaoqi.smartpai.config.EsIndexInitializer.initializeIndex(EsIndexInitializer.java:58)
-	at com.yizhaoqi.smartpai.config.EsIndexInitializer.run(EsIndexInitializer.java:33)
+	at com.yizhaoqi.minercap.config.EsIndexInitializer.initializeIndex(EsIndexInitializer.java:58)
+	at com.yizhaoqi.minercap.config.EsIndexInitializer.run(EsIndexInitializer.java:33)
 	... 20 common frames omitted
 Caused by: java.net.ConnectException: Connection refused: no further information
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
@@ -75,7 +75,7 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 	at java.base/java.lang.Thread.run(Thread.java:842)
 2026-02-12 14:58:57.716 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
 java.lang.RuntimeException: 初始化索引失败
-	at com.yizhaoqi.smartpai.config.EsIndexInitializer.run(EsIndexInitializer.java:47)
+	at com.yizhaoqi.minercap.config.EsIndexInitializer.run(EsIndexInitializer.java:47)
 	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788)
 	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82)
 	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60)
@@ -95,7 +95,7 @@ java.lang.RuntimeException: 初始化索引失败
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at com.yizhaoqi.smartpai.SmartPaiApplication.main(SmartPaiApplication.java:10)
+	at com.yizhaoqi.minercap.MinerCapApplication.main(SmartPaiApplication.java:10)
 Caused by: java.net.ConnectException: Connection refused: no further information
 	at org.elasticsearch.client.RestClient.extractAndWrapCause(RestClient.java:934)
 	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:304)
@@ -103,8 +103,8 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 	at co.elastic.clients.transport.rest_client.RestClientHttpClient.performRequest(RestClientHttpClient.java:91)
 	at co.elastic.clients.transport.ElasticsearchTransportBase.performRequest(ElasticsearchTransportBase.java:137)
 	at co.elastic.clients.elasticsearch.indices.ElasticsearchIndicesClient.exists(ElasticsearchIndicesClient.java:655)
-	at com.yizhaoqi.smartpai.config.EsIndexInitializer.initializeIndex(EsIndexInitializer.java:58)
-	at com.yizhaoqi.smartpai.config.EsIndexInitializer.run(EsIndexInitializer.java:33)
+	at com.yizhaoqi.minercap.config.EsIndexInitializer.initializeIndex(EsIndexInitializer.java:58)
+	at com.yizhaoqi.minercap.config.EsIndexInitializer.run(EsIndexInitializer.java:33)
 	... 20 common frames omitted
 Caused by: java.net.ConnectException: Connection refused: no further information
 	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
