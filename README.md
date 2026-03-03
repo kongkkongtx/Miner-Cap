@@ -72,9 +72,6 @@ frontend/
 通过 WebSocket 实现实时对话交互，支持流式响应，用户可快速获取安全知识问答结果。
 
 ## 前置环境
-
-在开始之前，请确保已安装以下软件：
-
 - Java 17
 - Maven 3.8.6 或更高版本
 - Node.js 18.20.0 或更高版本
@@ -85,7 +82,6 @@ frontend/
 - Kafka 3.2.1
 - Redis 7.0.11
 - Docker（可选，用于运行 Redis、MinIO、Elasticsearch 和 Kafka 等服务）
-
 
 ## 前端启动
 
